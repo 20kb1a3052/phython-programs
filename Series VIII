@@ -1,0 +1,27 @@
+Write a program to generate the following series 4, 5, 9, 18, 34,... 
+
+Input format: 
+
+The input containing an integer which denotes 'n' 
+
+Output format: 
+
+Print the series and refer the sample output for formatting.
+
+Sample Input & Output:
+
+5
+
+4 5 9 18 34 
+
+#python
+n=int(input("n:"))
+a=4
+b=5
+print(a,end=" ")
+print(b,end=" ")
+s=0
+s=a+b
+for i in range(3,n+1):
+    print(s,end=" ")
+    s=s+pow(i,2)
